@@ -1,0 +1,100 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root{
+    --dark-blue: hsl(218, 23%, 16%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --neon-green: hsl(150, 100%, 66%);
+    --light-cyan: hsl(193, 38%, 86%); 
+}
+
+body{
+    background-color: var(--dark-blue);
+}
+
+/* Card styling  */
+.card{
+    background-color: var(--dark-grayish-blue);
+    box-shadow: 0 0 15px 10px rgba(31, 31, 31, 0.24);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    padding: 45px 45px 0 45px;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading styling */
+.heading{
+    text-transform: uppercase;
+    color: var(--neon-green);
+    word-spacing: 5px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+/* Quote styling */
+.quote{
+    color: var(--light-cyan);
+    text-align: center;
+    font-size: 28px;
+    transition: 0.4s all ease-in-out;
+}
+
+/* Button styling */
+.btn{
+    background-color: var(--neon-green);
+    border: none;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 4rem;
+    margin: 0 auto;
+    position: relative;
+    top: 35px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.btn img{
+    aspect-ratio: 1/1;
+    width: 25px;
+    transition: 0.3s transform ease-in-out;
+}
+
+.btn:is(:hover, :active) {
+    box-shadow: 0 0 27px 9px hsl(150deg 100% 66% / 48%);
+}
+
+/* RESPONSIVE DESIGNING */
+@media (max-width: 1030px) {
+    .card{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 780px) {
+    .card{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .card{
+        width: 90vw;
+    }
+}

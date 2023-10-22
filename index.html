@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./public/index.css">
+
+    <!-- Title -->
+    <title>Quote-generator App</title>
+  </head>
+  <body>
+    <!-- Card -->
+    <section class="card">
+      <!-- Heading -->
+      <h5 id="heading" class="heading">Advice <span id="quote-number"></span></h5>
+
+      <!-- Quote/Advice -->
+      <p id="quote" class="quote">"Be water my friend"</p>
+
+      <!-- Division Image -->
+      <img src="./images/pattern-divider-desktop.svg" alt="" id="division">
+
+      <!-- Quote Button -->
+      <button onclick="fetchQuote()" class="btn" id="btn"><img src="./images/icon-dice.svg" alt="" id="dice-icon"></button>
+    </section>
+    
+    <!-- Javascript -->
+    <script src="./public/script.js"></script>
+  </body>
+</html>
